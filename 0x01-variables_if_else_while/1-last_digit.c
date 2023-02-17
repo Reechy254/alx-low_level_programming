@@ -10,7 +10,7 @@ int main(void)
 {
 	int n;
 	int lastDigit;
-	char message;
+	char *message;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
