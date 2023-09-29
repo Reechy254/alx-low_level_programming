@@ -7,29 +7,21 @@
  * Return: should be a converted number, or 0
  */
 
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *c)
 {
-	int c;
-	unsigned int d;
+	int a;
+	unsigned int b = 0;
 
-	d = 0;
-
-	if (!b)
+	if (!c)
 		return (0);
 
-	for (c = 0; b[c] != '\0'; c++)
+	for (a = 0; c[a]; a++)
 	{
+		if (c[a] < '0' || c[a] > '1')
+			return (0)
+		b = 2 * b + (c[a] - '0')
 
-		if (b[c] != '0' && c[c] != '1')
-			return (0);
 	}
 
-	for (c = 0; b[c] != '\0'; c++)
-	{
-
-		d <<= 1;
-		if (c[c] == '1')
-			d += 1;
-	}
-}
 	return (d);
+}
