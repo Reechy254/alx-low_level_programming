@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint -it converts a binary number to a unsigned int.
- * @c: contains the binary number
+ * @c: contains a binary number
  *
  * Return: should be a converted number, or 0
  */
